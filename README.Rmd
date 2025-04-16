@@ -1,0 +1,72 @@
+# Doris Shiny Dashboard
+
+This repository contains the modular R Shiny application DORIS (Disease Outbreak Response Information System), which enables non-technical users to conduct spatial and temporal data visualization & analysis. It uses Databricks and Posit-compatible infrastructure.
+
+## Project Structure
+
+```
+.
+├── app.R
+├── data/all_data_layers.rda
+├── data/data_tree_named.rda
+├── data/disease_outcomes.rda
+├── data/facilities.rda
+├── data/layers.rda
+├── data/level_data.rda
+├── global.R
+├── R/functions/do_hdbscan_v1.R
+├── R/functions/do_hdbscan_v2.R
+├── R/helper_functions_v2.R
+├── R/helper_functions_v3.R
+├── R/helper_functions_v4.R
+├── R/modules/clustering/_archive/cluster_characteristics_module.R
+├── R/modules/clustering/_archive/cluster_characteristics_moduleRG.R
+├── R/modules/clustering/_archive/cluster_detection_module.R
+├── R/modules/clustering/_archive/cluster_detection_moduleRG.R
+├── R/modules/clustering/_archive/cluster_visualization_module.R
+├── R/modules/clustering/_archive/cluster_visualization_moduleCS.R
+├── R/modules/clustering/_archive/cluster_visualization_moduleCS2.R
+├── R/modules/clustering/cluster_detection_module_devSF.R
+├── R/modules/clustering/cluster_detection_module.R
+├── R/modules/clustering/cluster_plot_module_dev.R
+├── R/modules/clustering/cluster_plot_module.R
+├── R/modules/clustering/cluster_visualization_module_dev.R
+├── R/modules/clustering/cluster_visualization_module_devSF.R
+├── R/modules/clustering/cluster_visualization_module.R
+├── R/modules/clustering/test/test_cluster_detection_module_SF.R
+├── R/modules/clustering/test/test_cluster_detection_moduleRG.R
+├── R/modules/clustering/test/test_cluster_visualization_moduleCS.R
+├── R/modules/clustering/test/test_cluster_visualization_moduleCS2.R
+├── R/modules/dataexplorer/archive/data_tree_module_202503261218.R
+├── R/modules/dataexplorer/archive/revised_treeRG__20250326255.R
+├── R/modules/dataexplorer/archive/revised_treeRG.R
+├── R/modules/dataexplorer/archive/test_set_attributes.R
+├── R/modules/dataexplorer/data_explorer_module_BW2.R
+├── R/modules/dataexplorer/data_explorer_module_RG.R
+├── R/modules/dataexplorer/data_explorer_module.R
+├── R/modules/dataexplorer/data_tree_module_dev.R
+├── R/modules/dataexplorer/data_tree_module.R
+├── R/modules/dataexplorer/tests/archive/test_data_tree_module_202503261221.R
+├── R/modules/dataexplorer/tests/test_data_explorer_module_BW.R
+├── R/modules/dataexplorer/tests/test_data_explorer_module_RG.R
+├── R/modules/dataexplorer/tests/test_data_explorer_module.R
+├── R/modules/dataexplorer/tests/test_data_tree_module.R
+├── R/modules/filtering/dynamic_filter_module.R
+├── R/modules/filtering/proximity_analysis_module.R
+├── R/modules/filtering/tests/test_dynamic_filter_module.R
+├── R/modules/filtering/tests/test_proximity_analysis_module.R
+├── README.md
+├── README.Rmd
+├── Untitled Notebook 2025-04-16 18_04_14.r
+├── www/doris_splash1.png
+```
+
+## Launching the App
+
+Use the provided `launch_app.R` notebook in Databricks to copy files and start the app.
+
+Or run the app locally from RStudio using:
+
+```r
+shiny::runApp('.')
+```
